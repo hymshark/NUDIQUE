@@ -77,9 +77,6 @@ $(function () {
         $('.best_right_wrap .right_explain').removeClass('active');
         $('.right_explain').eq($(this).index()).addClass('active');
         
-        
-
-
         let imageIndex = $(this).index();
         $('.best_image').stop().animate({
             'margin-left' : -bestWidth * imageIndex
@@ -117,20 +114,6 @@ var swiper = new Swiper(".mySwiper", {
       
 });
 
-var swiper02 = new Swiper(".mySwiper.mySwiper02", {
-    slidesPerView: 2.5,
-    watchSlidesProgress: true,
-    loop: true,
-    spaceBetween: 24,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
   
     //top_btn
     let topBtn = $('.top_btn');
